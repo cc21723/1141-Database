@@ -41,7 +41,10 @@
         <tr>
             <td><?=$item['name'];?></td>
             <td><?=$item['price'];?></td>
-            <td><a href='update_item.php?id=<?=$item['id'];?>'>編輯</a></td>
+            <td>
+                <a href='update_item.php?id=<?=$item['id'];?>'>編輯</a>
+                <a href='./api/delete_item.php?id=<?=$item['id'];?>'>刪除</a>
+            </td>
         </tr>
         <?php
         endforeach;
